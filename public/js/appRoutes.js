@@ -1,4 +1,5 @@
-angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
+angular.module('appRoutes', []).config(['$routeProvider', 
+	'$locationProvider', function($routeProvider, $locationProvider) {
 
 	$routeProvider
 
@@ -17,6 +18,11 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			templateUrl: 'views/geek.html',
 			controller: 'GeekController'	
 		});
+
+		.when('anoutNerds', {
+			templateUrl: 'views/aboutNerds.html'
+			controller: 'MainController'
+		})
 
 	$locationProvider.html5Mode(true);
 
