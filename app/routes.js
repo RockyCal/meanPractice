@@ -30,4 +30,8 @@ var Nerd = require('./models/Nerd');
 			res.sendfile('./public/views/index.html');
 		});
 
+		app.get('/aboutNerd', function(req, res){
+			res.sendfile('./public/views/aboutNerds.html')
+		});
+
 	};
